@@ -132,6 +132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 98559279}
+  - component: {fileID: 98559280}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -156,6 +157,21 @@ Transform:
   - {fileID: 990720892}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &98559280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 98559278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b05d570ab15f3024a84408271a2dd963, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementSpeed: 5
+  rotationSpeed: 1
+  cam: {fileID: 990720891}
 --- !u!1 &281805586
 GameObject:
   m_ObjectHideFlags: 0
@@ -747,13 +763,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 990720889}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f701b47b2bf2064eb64b3152f746616, type: 3}
+  m_Script: {fileID: 11500000, guid: 85f5654b20faae745a1841d6d323b39a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 805349927}
-  targetOffset: {x: 0, y: 20, z: -20}
-  movementSpeed: 5
-  rotationSpeed: 100
+  target: {fileID: 98559279}
+  targetOffset: {x: 0, y: 0, z: 0}
+  movementSpeed: 0
+  rotationSpeed: 0
 --- !u!1 &1242765735
 GameObject:
   m_ObjectHideFlags: 0

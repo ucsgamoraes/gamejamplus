@@ -23,7 +23,7 @@ public class CameraController : MonoBehaviour
         
     }
 
-    void Update()
+    void LateUpdate()
     {
         MoveCamera();
         HandleRotationInput();
