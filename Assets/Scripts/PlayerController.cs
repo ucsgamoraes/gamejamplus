@@ -15,10 +15,21 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        HandleMovement();
+    }
+
+    private void HandleMovement()
+    {
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
+
+        // direção para qual o movimento foi executado
         Vector3 targetVector = new Vector3(horizontal, 0, vertical);
+
+        // calcula a posição final do jogador
         Vector3 movementVector = MoveTowardTarget(targetVector);
+
+        // rotaciona o player com base no movimento
         RotateTowardMovementVector(movementVector);
     }
 
